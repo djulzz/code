@@ -1,11 +1,10 @@
+func CalculateGrossIncome( hourlyRate:Double, NumHoursWorked:Double ) -> Double
+{
+	let Amount = hourlyRate * NumHoursWorked
+	return Amount 
+}
 
-var a = "Hello"
-var b = "World"
-var temp = "Empty"
 
-temp = a
-a = b
-b = temp
+var salary:Double = CalculateGrossIncome( hourlyRate:37.5, NumHoursWorked:40 )
 
-print( a )
-print( b )
+print( "You gross income based hourly rate is $\(salary)")
